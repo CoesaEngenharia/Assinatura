@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;600&display=swap');
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('./Fonts/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('./Fonts/Gotham-Light.otf') format('opentype');
+}
+
+
+
+* {
+    /* para retirar as configurações padrão do google, o (*) é o seletor global: seleciona todo mundo*/
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    /* criando uma gradiente linear-gradient(to right, rgb(0, 204, 255), rgb(255, 255, 255)) */
+    height: 75px;
+    padding: 10px;
+    margin-top: 0px;
+    width: 99%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 110px;
+    width: 150px;
+}
+
+
+#titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding-bottom: 0;
+}
+
+
+#subtitulo {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97999B;
+    height: 450px;
+    font-family: sans-serif;
+    width: 500px;
+    margin-top: 125px;
+    border-radius: 20px;
+    /*border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;*/
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.label-titulo {
+    margin: 5px;
+    margin-bottom: 0;
+    align-items: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+span {
+    color: #004080;
+}
+
+/* Estilo para o placeholder */
+.input-field::placeholder {
+    color: #999;
+    /* cor do texto do placeholder */
+    font-style: italic;
+    /* estilo do texto do placeholder */
+}
+
+/* Estilo para o texto de entrada */
+.input-field {
+    border: 1px solid #ccc;
+    /* cor da borda */
+    padding: 5px;
+    /* tamanho do preenchimento interno */
+    font-size: 14px;
+    /* tamanho da fonte */
+}
+
+p.obs {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+input {
+    transition: width 0.4s ease-in-out;
+    border-radius: 5px;
+    border: 0px;
+    border-color: #5a15c1;
+    margin-bottom: 7px;
+    background-color: #fff;
+    width: 250px;
+    outline: 0;
+    height: 20px;
+    padding: 1px;
+}
+
+input[type=text]:focus {
+    width: 80%;
+    border-color: #ffffff;
+}
+
+.titulo {
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+canvas {
+    display: none;
+}
+
+.botao {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    background: #004080;
+    border-radius: 6px;
+    border: 0;
+    color: #ffffff;
+    padding: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    /*position: absolute;*/
+    top: 55%;
+    margin-bottom: 30px;
+}
+
+.bntDownload {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    background: #004080;
+    border-radius: 6px;
+    border: 0;
+    color: #ffffff;
+    padding: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    width: 170px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    padding: 20px;
+    align-items: center;
+    width: 500px;
+
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+button:hover {
+    background: #00ccff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+button {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #97999B;
+    height: 70px;
+    width: 99%;
+    /*margin-bottom: 0;*/
+    position: fixed;
+    bottom: 0;
+
+
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-left: 150px;
+    margin-top: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Coesa</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+
+
+</head>
+
+<body>
+  <nav><img class="logo" src="./logoCoesa.png"
+      alt="logo KPE">
+  </nav>
+
+
+
+  <body>
+
+    <!-- AQUI COMEÇA O FORMULÁRIO-->
+    <form>
+      <h1 id="titulo">Assinatura Coesa</h1>
+      <p id="subtitulo">Complete suas informações</p>
+      <!-- <label class="titulo">Preencha o formulário:</label><br> -->
+      <label class="label-titulo" for="name">Nome:</label>
+      <!--<p class="obs">Não utilizar títulos. Ex.: Dir., Eng., Dr.</p>-->
+      <input class="entrada" type="text" class="input-field" placeholder="   Nome Completo" id="name" name="name">
+      <label class="label-titulo" for="cargo">Área: </label>
+      <p class="obs">Ex.: Área de Compliance, Área de Recursos Humanos, etc. </p>
+      <input class="entrada" type="text" class="input-field" placeholder="   Área" id="cargo" name="cargo">
+      <label class="label-titulo" for="cargo">Corporativo/Obra<span class="asterisco">*</span>: </label>
+      <p class="obs">*Inserir Corporativo ou nome da Obra</p>
+      <input class="entrada" type="text" class="input-field" placeholder="   Corporativo/Obra" id="unidade" name="unidade">
+      <button type="button" class="botao" onclick="generateImage()">Gerar assinatura</button>
+    </form>
+
+    <!-- AQUI COMEÇA O CANVAS-->
+    <canvas id="canvas"></canvas>
+
+    <div class="container-img"></div>
+
+
+
+    <footer>
+      <p>Coesa - Solidez e Credibilidade</p>
+    </footer>
+
+  </body>
+
+</html>
