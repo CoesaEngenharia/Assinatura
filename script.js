@@ -19,8 +19,8 @@ window.onload = function () {
         // Desenha a imagem no canvas
 
         // LARGURA E ALTURA DO CANVAS
-        canvas.width = 1650;
-        canvas.height = 400;
+        canvas.width = 1000;
+        canvas.height = 242;
 
         const ctx = canvas.getContext("2d");
 
