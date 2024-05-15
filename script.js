@@ -19,8 +19,8 @@ window.onload = function () {
         // Desenha a imagem no canvas
 
         // LARGURA E ALTURA DO CANVAS
-        canvas.width = 1000;
-        canvas.height = 242;
+        canvas.width = 1650;
+        canvas.height = 400;
 
         const ctx = canvas.getContext("2d");
 
@@ -56,7 +56,7 @@ window.onload = function () {
         const img = new Image();
         img.classList.add("img-ass");
         img.src = dataURL;
-        img.height = 200;
+        img.height = 100;
         container.appendChild(img);
       });
     });
