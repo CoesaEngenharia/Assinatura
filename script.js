@@ -29,7 +29,7 @@ window.onload = function () {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // SAÍDA DO INPUT NOME
-        ctx.font = "700 30px GothamBold";
+        ctx.font = "700 25px GothamBold";
         ctx.fillStyle = "#000000";
         ctx.fillText(`${name}`,305, 60);
 
