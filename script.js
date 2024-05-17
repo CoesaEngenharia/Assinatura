@@ -36,13 +36,13 @@ window.onload = function () {
         // SAÍDA DO INPUT CARGO
         ctx.font = "12px GothamBold";
         ctx.fillStyle = "#000000";
-        ctx.fillText(`${cargo} `, 200, 60);
+        ctx.fillText(`${cargo} `, 200, 63);
 
         // SAÍDA DO INPUT UNIDADE
         const cargoWidth = ctx.measureText(cargo).width;
         ctx.font = "12px GothamLight";
         ctx.fillStyle = "#000000";
-        ctx.fillText(` | ${unidade}`, 200 + cargoWidth, 60);
+        ctx.fillText(` | ${unidade}`, 200 + cargoWidth, 63);
 
         // SITE COESA
         ctx.font = "12px GothamLight";
