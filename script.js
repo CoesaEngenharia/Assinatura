@@ -19,8 +19,8 @@ window.onload = function () {
         // Desenha a imagem no canvas
 
         // LARGURA E ALTURA DO CANVAS
-        canvas.width = 640;
-        canvas.height = 164;
+        canvas.width = 454;
+        canvas.height = 113;
 
         const ctx = canvas.getContext("2d");
 
@@ -29,34 +29,34 @@ window.onload = function () {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // SAÍDA DO INPUT NOME
-        ctx.font = "700 25px GothamBold";
+        ctx.font = "700 19px GothamBold";
         ctx.fillStyle = "#000000";
-        ctx.fillText(`${name}`,305, 60);
+        ctx.fillText(`${name}`, 200, 45);
 
         // SAÍDA DO INPUT CARGO
-        ctx.font = "15px GothamBold";
+        ctx.font = "12px GothamBold";
         ctx.fillStyle = "#000000";
-        ctx.fillText(`${cargo} `, 305, 85);
+        ctx.fillText(`${cargo} `, 200, 60);
 
         // SAÍDA DO INPUT UNIDADE
         const cargoWidth = ctx.measureText(cargo).width;
-        ctx.font = "15px GothamLight";
+        ctx.font = "12px GothamLight";
         ctx.fillStyle = "#000000";
-        ctx.fillText(` | ${unidade}`, 305 + cargoWidth, 85);
+        ctx.fillText(` | ${unidade}`, 200 + cargoWidth, 60);
 
         // SITE COESA
-        ctx.font = "15px GothamLight";
+        ctx.font = "12px GothamLight";
         ctx.fillStyle = "#004080";
-        ctx.fillText("www.coesa.com.br", 305, 130);
+        ctx.fillText("www.coesa.com.br", 200, 85);
 
-        ctx.drawImage(imagem, 10, 26, 300, 125.18);
+        ctx.drawImage(imagem, 10, 19, 200, 83.45);
 
         // CONVERTENDO O CANVA EM IMAGEM
         const dataURL = canvas.toDataURL();
         const img = new Image();
         img.classList.add("img-ass");
         img.src = dataURL;
-        img.height = 200;
+        img.height = 120;
         container.appendChild(img);
       });
     });
