@@ -14,7 +14,7 @@ window.onload = function () {
       document.fonts.load("55px Open Sans"),
     ]).then(() => {
       const imagem = new Image();
-      imagem.src = "./marca50AnosHorizontal-04.png";
+      imagem.src = "./logoAssinatura.png";
       imagem.addEventListener("load", () => {
         // Desenha a imagem no canvas
 
